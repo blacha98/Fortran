@@ -1,6 +1,8 @@
 program main
     
     use naive
+    use better
+
     
     implicit none
     integer :: i, e, f
@@ -30,6 +32,8 @@ program main
         allocate(B16(matrixSizes(i), matrixSizes(i)))
         allocate(C16(matrixSizes(i), matrixSizes(i)))
         
+        !naive
+
         ! kind = 4
         do e = 1, matrixSizes(i)
             do f = 1, matrixSizes(i)
@@ -80,6 +84,59 @@ program main
         C16=naivemultiplication(A16,B16)
         call cpu_time(timeStop)
         write(*,*) i,"16", " ", timeStop - timeStart
+
+        !better
+
+        ! kind = 4
+        do e = 1, matrixSizes(i)
+            do f = 1, matrixSizes(i)
+                CALL RANDOM_NUMBER(rand4)
+                A4(e,f) = rand4
+                CALL RANDOM_NUMBER(rand4)
+                B4(e,f) = rand4
+                
+                C4(e,f) = 0
+            end do
+        end do
+        
+        call cpu_time(timeStart)
+        C4=betterMultiplication(A4,B4)
+        call cpu_time(timeStop)
+        write(*,*) i, "better","4", " ", timeStop - timeStart
+        
+        ! kind = 8
+        do e = 1, matrixSizes(i)
+            do f = 1, matrixSizes(i)
+                CALL RANDOM_NUMBER(rand8)
+                A8(e,f) = rand8
+                CALL RANDOM_NUMBER(rand8)
+                B8(e,f) = rand8
+                
+                C8(e,f) = 0
+            end do
+        end do
+        
+        call cpu_time(timeStart)
+        C8=betterMultiplication(A8,B8)
+        call cpu_time(timeStop)
+        write(*,*) i, "better","8", " ", timeStop - timeStart
+        
+        ! kind = 16
+        do e = 1, matrixSizes(i)
+            do f = 1, matrixSizes(i)
+                CALL RANDOM_NUMBER(rand16)
+                A16(e,f) = rand16
+                CALL RANDOM_NUMBER(rand16)
+                B16(e,f) = rand16
+                
+                C16(e,f) = 0
+            end do
+        end do
+        
+        call cpu_time(timeStart)
+        C16=betterMultiplication(A16,B16)
+        call cpu_time(timeStop)
+        write(*,*) i, "better", "16", " ", timeStop - timeStart
         
         
         
