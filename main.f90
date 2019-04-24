@@ -2,6 +2,7 @@ program main
     
     use naive
     use better
+    use dot
 
     
     implicit none
@@ -137,6 +138,59 @@ program main
         C16=betterMultiplication(A16,B16)
         call cpu_time(timeStop)
         write(*,*) i, "better", "16", " ", timeStop - timeStart
+
+        !dot
+
+        ! kind = 4
+        do e = 1, matrixSizes(i)
+            do f = 1, matrixSizes(i)
+                CALL RANDOM_NUMBER(rand4)
+                A4(e,f) = rand4
+                CALL RANDOM_NUMBER(rand4)
+                B4(e,f) = rand4
+                
+                C4(e,f) = 0
+            end do
+        end do
+        
+        call cpu_time(timeStart)
+        C4=dotMultiplication(A4,B4)
+        call cpu_time(timeStop)
+        write(*,*) i, "dot","4", " ", timeStop - timeStart
+        
+        ! kind = 8
+        do e = 1, matrixSizes(i)
+            do f = 1, matrixSizes(i)
+                CALL RANDOM_NUMBER(rand8)
+                A8(e,f) = rand8
+                CALL RANDOM_NUMBER(rand8)
+                B8(e,f) = rand8
+                
+                C8(e,f) = 0
+            end do
+        end do
+        
+        call cpu_time(timeStart)
+        C8=dotMultiplication(A8,B8)
+        call cpu_time(timeStop)
+        write(*,*) i, "dot","8", " ", timeStop - timeStart
+        
+        ! kind = 16
+        do e = 1, matrixSizes(i)
+            do f = 1, matrixSizes(i)
+                CALL RANDOM_NUMBER(rand16)
+                A16(e,f) = rand16
+                CALL RANDOM_NUMBER(rand16)
+                B16(e,f) = rand16
+                
+                C16(e,f) = 0
+            end do
+        end do
+        
+        call cpu_time(timeStart)
+        C16=dotMultiplication(A16,B16)
+        call cpu_time(timeStop)
+        write(*,*) i, "dot", "16", " ", timeStop - timeStart
         
         
         
