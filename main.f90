@@ -87,19 +87,19 @@ program main
         call cpu_time(timeStart)
         C4=naivemull(A4,B4)
         call cpu_time(timeStop)
-        write(1,*) matrixSizes(i), " ", timeStop - timeStart
+        write(1,*) matrixSizes(i), timeStop - timeStart
         
         
         call cpu_time(timeStart)
         C8=naivemull(A8,B8)
         call cpu_time(timeStop)
-        write(2,*) matrixSizes(i), " ", timeStop - timeStart
+        write(2,*) matrixSizes(i), timeStop - timeStart
         
         
         call cpu_time(timeStart)
         C16=naivemull(A16,B16)
         call cpu_time(timeStop)
-        write(3,*) matrixSizes(i), " ", timeStop - timeStart
+        write(3,*) matrixSizes(i), timeStop - timeStart
 
         !better
 
@@ -142,19 +142,19 @@ program main
         call cpu_time(timeStart)
         C4=betterMull(A4,B4)
         call cpu_time(timeStop)
-        write(4,*) matrixSizes(i), " ", timeStop - timeStart
+        write(4,*) matrixSizes(i), timeStop - timeStart
         
         
         call cpu_time(timeStart)
         C8=betterMull(A8,B8)
         call cpu_time(timeStop)
-        write(5,*) matrixSizes(i), " ", timeStop - timeStart
+        write(5,*) matrixSizes(i), timeStop - timeStart
         
         
         call cpu_time(timeStart)
         C16=betterMull(A16,B16)
         call cpu_time(timeStop)
-        write(6,*) matrixSizes(i), " ", timeStop - timeStart
+        write(6,*) matrixSizes(i), timeStop - timeStart
 
         !dot
 
@@ -199,17 +199,17 @@ program main
         call cpu_time(timeStart)
         C4=dotMull(A4,B4)
         call cpu_time(timeStop)
-        write(7,*) matrixSizes(i), " ", timeStop - timeStart
+        write(7,*) matrixSizes(i), timeStop - timeStart
         
         call cpu_time(timeStart)
         C8=dotMull(A8,B8)
         call cpu_time(timeStop)
-        write(8,*) matrixSizes(i), " ", timeStop - timeStart
+        write(8,*) matrixSizes(i), timeStop - timeStart
         
         call cpu_time(timeStart)
         C16=dotMull(A16,B16)
         call cpu_time(timeStop)
-        write(9,*) matrixSizes(i), " ", timeStop - timeStart
+        write(9,*) matrixSizes(i), timeStop - timeStart
 
         !matmul
 
@@ -254,17 +254,17 @@ program main
         call cpu_time(timeStart)
         C4=matmul(A4,B4)
         call cpu_time(timeStop)
-        write(10,*) matrixSizes(i), " ", timeStop - timeStart
+        write(10,*) matrixSizes(i), timeStop - timeStart
         
         call cpu_time(timeStart)
         C8=matmul(A8,B8)
         call cpu_time(timeStop)
-        write(11,*) matrixSizes(i), " ", timeStop - timeStart
+        write(11,*) matrixSizes(i), timeStop - timeStart
         
         call cpu_time(timeStart)
         C16=matmul(A16,B16)
         call cpu_time(timeStop)
-        write(12,*) matrixSizes(i), " ", timeStop - timeStart
+        write(12,*) matrixSizes(i), timeStop - timeStart
 
         
         if (allocated(A4)) deallocate(A4)
