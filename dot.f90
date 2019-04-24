@@ -1,10 +1,10 @@
 module dot
     
     implicit none
-    public :: dotMultiplication
+    public :: dotmull
     private :: dot4, dot8, dot16
     
-    interface dotMultiplication
+    interface dotmull
         procedure dot4, dot8, dot16
     end interface
     

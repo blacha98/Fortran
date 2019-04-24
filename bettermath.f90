@@ -1,10 +1,10 @@
 module better
 
     implicit none
-    public :: betterMultiplication
+    public :: bettermull
     private :: better4, better8, better16
     
-    interface betterMultiplication
+    interface bettermull
         procedure better4, better8, better16
     end interface
     
