@@ -36,8 +36,16 @@ oraz uruchamiałem program komendą
 dokładnie tak jak programy w C z poziomu terminala. Niestety nie udało mi się stworzyć pliku makefile z powodu braku czasu - niestety wyskoczyło mi kolokwium oraz wyjazd w ostatni dzień - za co bardzo przepraszam. Mam olbrzymią nadzieję, że nie będzie to bardzo wielka strata punktowa za rozwiązanie.
 
 ### Wnioski
+Zacznę od zaprezentowania wykresów:
 
-![4](4.png)
+![4](https://user-images.githubusercontent.com/45050808/56748486-3c7fe400-6780-11e9-89dd-8193abd10829.png)
+
+![8](https://user-images.githubusercontent.com/45050808/56748505-4570b580-6780-11e9-8eea-dc90fbe11c53.png)
+
+![16](https://user-images.githubusercontent.com/45050808/56748515-499cd300-6780-11e9-9e54-e4d806021783.png)
+
+Pierwsza rzecz jaka rzuca mi się w oczy, i czego szczerze móiąc się spodziewłem to to, że dla kind=16 mnożenie macieży trwa najdłużej. Co mnie natomiast zaskoczyło, to bardzo mała różnica dla kind=4 oraz kind=8.
+Nie jest też dla mnie zaskoczeniem, że funkcja wbudowana w Fortrana tj matmul jest najszybsza, jednak zaskakujące jest dla mnie jak niewielkie są różnice pomiędzy poszczególnymi sposobami mnożenia, napisanymi przeze mnie. Dla kind=16 różnica ta praktycznie nie występuje jeśli chodzi o funkcje zaimplementowane, a wbudowaną w Fortrana. Dla kind=4 oraz kind=8 dysproporcja ta jest zauważalna.
 
 ###### Z wyrazami szacunku
 ###### Krzysztof Blecharczyk
