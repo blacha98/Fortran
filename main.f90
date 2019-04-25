@@ -18,18 +18,18 @@ program main
     
     matrixSizes = [10, 20, 40, 80, 160, 320, 640, 1280]
 
-    open(unit = 1, file = "/home/krzysztof/Pulpit/fortran zad 1/res/result4Naive")
-    open(unit = 2, file = "/home/krzysztof/Pulpit/fortran zad 1/res/result8Naive")
-    open(unit = 3, file = "/home/krzysztof/Pulpit/fortran zad 1/res/result16Naive")
-    open(unit = 4, file = "/home/krzysztof/Pulpit/fortran zad 1/res/result4Better")
-    open(unit = 5, file = "/home/krzysztof/Pulpit/fortran zad 1/res/result8Better")
-    open(unit = 6, file = "/home/krzysztof/Pulpit/fortran zad 1/res/result16Better")
-    open(unit = 7, file = "/home/krzysztof/Pulpit/fortran zad 1/res/result4Dot")
-    open(unit = 8, file = "/home/krzysztof/Pulpit/fortran zad 1/res/result8Dot")
-    open(unit = 9, file = "/home/krzysztof/Pulpit/fortran zad 1/res/result16Dot")
-    open(unit = 10, file = "/home/krzysztof/Pulpit/fortran zad 1/res/result4Matmul")
-    open(unit = 11, file = "/home/krzysztof/Pulpit/fortran zad 1/res/result8Matmul")
-    open(unit = 12, file = "/home/krzysztof/Pulpit/fortran zad 1/res/result16MAtmul")
+    open(unit = 1, file = "/home/krzysztof/Pulpit/fortran zad 1/res/kind=4/result4Naive")
+    open(unit = 2, file = "/home/krzysztof/Pulpit/fortran zad 1/res/kind=8/result8Naive")
+    open(unit = 3, file = "/home/krzysztof/Pulpit/fortran zad 1/res/kind=16/result16Naive")
+    open(unit = 4, file = "/home/krzysztof/Pulpit/fortran zad 1/res/kind=4/result4Better")
+    open(unit = 5, file = "/home/krzysztof/Pulpit/fortran zad 1/res/kind=8/result8Better")
+    open(unit = 6, file = "/home/krzysztof/Pulpit/fortran zad 1/res/kind=16/result16Better")
+    open(unit = 7, file = "/home/krzysztof/Pulpit/fortran zad 1/res/kind=4/result4Dot")
+    open(unit = 8, file = "/home/krzysztof/Pulpit/fortran zad 1/res/kind=8/result8Dot")
+    open(unit = 9, file = "/home/krzysztof/Pulpit/fortran zad 1/res/kind=16/result16Dot")
+    open(unit = 10, file = "/home/krzysztof/Pulpit/fortran zad 1/res/kind=4/result4Matmul")
+    open(unit = 11, file = "/home/krzysztof/Pulpit/fortran zad 1/res/kind=8/result8Matmul")
+    open(unit = 12, file = "/home/krzysztof/Pulpit/fortran zad 1/res/kind=16/result16Matmul")
     
 
     do i=1,8

@@ -18,7 +18,7 @@ set termoption dashed
 plot "result16Naive" title "naive"
 replot "result16Better" title "better"
 replot "result16Dot" title "dot"
-replot "result16MAtmul" title "matmul"
+replot "result16Matmul" title "matmul"
 
 unset multi
 
