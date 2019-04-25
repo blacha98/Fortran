@@ -36,4 +36,8 @@ oraz uruchamiałem program komendą
 dokładnie tak jak programy w C z poziomu terminala. Niestety nie udało mi się stworzyć pliku makefile z powodu braku czasu - niestety wyskoczyło mi kolokwium oraz wyjazd w ostatni dzień - za co bardzo przepraszam. Mam olbrzymią nadzieję, że nie będzie to bardzo wielka strata punktowa za rozwiązanie.
 
 ###### Z wyrazami szacunku
+<<<<<<< HEAD
 ###### Krzysztof Blecharczyk
+=======
+###### Krzysztof Blecharczyk
+>>>>>>> e11d27db330729d4e24217699ebc0d8e77b94df0
