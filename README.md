@@ -7,9 +7,9 @@ Szanowny Panie Doktorze, do przy rozwiązaniu zadania powstały pliki z kodem ź
 #### Katalog src
 
 * **main.f90** zawierający główny kod projektu
-* **naivemath.f90** zawierający zaimplementowaną naiwną metodę mnożenia macierzy
+* **naive.f90** zawierający zaimplementowaną naiwną metodę mnożenia macierzy
 * **betermath.f90** zawierający zaimplementowaną ulepsząną metodę mnożenia macierzy
-* **dotmath.f90** zawierający zaimplementowaną metodę wykorzystująca iloczyn skalarny
+* **dot.f90** zawierający zaimplementowaną metodę wykorzystująca iloczyn skalarny
 
 oraz dodatwkowo katalog z rezultatami
 
@@ -18,7 +18,7 @@ Katalog ten podzielony został na kilka folderów, aby oddzielić i zebrać w je
 Wewnątrz każdego z folderów są pliki z czasami dla każdego sposobu mnożenia, plik gnuplotowy pozwalający stworzyć wykres, oraz sam wykres zapisany jako pdf - tak jak wymagało tego polecenie.
 
 ### Sposób wykonania zadania:
-W każdym z trzech plików odpowiednio: **naivemath.f90**, **bettermath.f90** oraz **dotmath.f90** znajdują się moduły wraz z trzema funkcjami - każda obsługująca daną precyzję. Dodatkowo zrobiony jest też interface.
+W każdym z trzech plików odpowiednio: **naive.f90**, **better.f90** oraz **dot.f90** znajdują się moduły wraz z trzema funkcjami - każda obsługująca daną precyzję. Dodatkowo zrobiony jest też interface.
 W pliku **main.f90** znajdują się deklaracje potrzebnych zmiennych, otworzenie odpowiednich plików, aby łatwo zgromadzić wyniki i przygotować wykres, oraz główna pętla, która obsługuje nasze funkcje z modułów które zostały wcześniej dołączone.
 
 W pętli macierze alokowane oraz dealokowane są z każdym przebiegiem pęti, w celu zmiany ich rozmiaru oraz lepszego gospodarowania pamięcią. Odpowiednie dane są zapisywane do odpowiednichplików.
